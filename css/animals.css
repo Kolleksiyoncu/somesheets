@@ -1,0 +1,156 @@
+*{margin: 0; padding: 0;box-sizing: border-box;}
+nav{background:darkkhaki;border-bottom: 2px solid black;position: relative;}
+nav a{color: black;text-decoration: none;}
+li{list-style: none;}
+u:hover{color: blue;transition: all .3s; cursor: pointer;}
+h1{text-align: center; text-transform: uppercase;}
+h3{text-transform: uppercase;padding-bottom: 4px;}
+footer{background: darkkhaki;color: black;border-top: 2px solid black;position: relative;text-align: center;}
+/*DropDown Menü */
+#menuBtn{font-size: 16px;border:none;cursor: pointer;width:30px;height:30px;background: transparent;}
+#menuBtn:hover{color: lightgrey;transition: all .3s;}
+#searchBarDrop{width: 400px;position:absolute;margin-top:5px;background: transparent;}
+#searchBarDrop:focus{border-top: 1px solid silver;}
+#dropDownMenu{position: relative;display: inline-block;width:100%;}
+.dropdown-list {display: none;text-align:center;position: absolute;background:darkkhaki;
+  width: 100%;z-index: 1;}
+.dropdown-list li a{border-bottom:2px solid black;padding: 12px 16px;display: block;}
+.dropdown-list a:hover {font-size:20px;color:whitesmoke ;text-decoration: underline;
+  transition: all .3s;}
+#btn2{position:absolute;width:30px;height:30px;cursor:pointer;font-size:20px;
+  background:transparent;border:none;margin-left:410px;}
+#btn2:hover{color: lightgrey;transition: all .3s;}
+/* MAİN MENÜ */
+#mainLogo{display:inline;position:absolute;font-size: 35px;top:8.5px;left: 10px;}
+#linkArea{padding: 0;pargin:0;}
+#mainMenu li{display: inline-block;width: auto;height: 50px;text-transform: uppercase;
+/*Yazı ortalamak için > */line-height: 50px;text-align: center;position: relative; left: 250px;padding-left: 20px;}
+#mainMenu li a:hover{color:whitesmoke ;text-decoration: underline;transition: all .3s;}
+#btn1{position:absolute;top:1%;right:1%;width:50px;height:50px;cursor:pointer;font-size:30px;background:transparent;
+  border:none;margin-top 1%;}
+#btn1:hover{color: lightgrey;transition: all .3s;}
+#searchBarMain{width: 300px;background:transparent;position:absolute;top:20px;right:15%;}
+#searchBarMain:focus{border: 1px solid silver;}
+/*--------------------------------------------------------------------*/
+#toTop{display: none;width: 50px;height: 50px;line-height: 50px;text-align: center;font-size: 50px;
+  background: rgba(0,0,0,.5);color: rgba(255,255,255,.5);position: fixed;
+  bottom: 22px;right: 0px;cursor: pointer;transition: all .5s ease-in-out;}
+#toTop:hover{background: rgba(0,0,0,.84);color: rgba(255,255,255,.84);}
+#section{margin-left:5%}
+/* CARD */
+.card{position:relative;max-width: 325px;text-align: center;border: 1px solid black;margin:1px 1.5px 5px 3px;display: inline-block;}
+.cardPic{position: relative;width: 100%;height: 550px; padding: 0;margin: 0;cursor:pointer;}
+.cardText{overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 3;}
+#more{display: none;}
+tt{color:darkgrey;transition: .4s;float: right;}
+tt:hover{color:blue;text-decoration:bold;cursor:pointer;}
+.overlay{position: absolute; width: 100%;height: 8.5%; top: 0%;left: 0;right: 0;bottom: 0;opacity: 0;transition: .5s ease; cursor: pointer; background: khaki;}
+.overlayText{color: black; position: absolute;text-align: left;}
+.cardHead:hover .overlay{opacity: .8;}
+#comBtn{position:inherit;border: 2px solid teal;color:teal;transition: .7s;cursor: pointer;}
+#favBtn{position:inherit;border: 2px solid maroon;color:maroon;transition: .7s;cursor: pointer;}
+#ratBtn{position:inherit;border: 2px solid goldenrod;color:goldenrod;transition: .7s;cursor: pointer;}
+#comBtn:hover{background:teal;color:white;}
+#favBtn:hover{background:maroon;color:white;}
+#ratBtn:hover{background:goldenrod;color: white;}
+/* MODEL */
+.modelWrap{position: fixed;width: 100%;height: 100%;top: 0;left: 0;right: 0;bottom: 0;
+  background-color: rgba(0,0,0,0.7);z-index: 1;}
+.modelPic{display:block;top:1%;left:15%;width:488px;height:731px;border:2px solid black;
+  position: absolute;left: 35%;padding: 0;margin: 0;}
+.closeBtn{font-size:20px;background-color:black;color:#999;top:1%;left:65%;z-index:1;
+  cursor:pointer;transition: .4s;border-bottom-left-radius: 25px;position:absolute;
+  border-bottom-right-radius: 25px;}
+.closeBtn:hover{color:white;}
+/* DARK MODE Classes */
+.darkModeBody{background: #0f1419;}
+.darkH1{color: coral;}
+.darkModeHeader{color: coral;}
+.darkMode0{background-color: transparent;border-bottom: 2px solid darkgrey;color: darkgrey;}
+.darkMode1{background-color: transparent;border: 2px solid darkgrey!important;color: darkgrey!important;}/*nav ,input */
+.darkModeText{color: darkgrey;}/*a, i, buttonDM */
+.dropDownDarkList{background: #0f1419;border-bottom: 2px solid silver;}
+.darkModeCard{border: 2px solid darkgrey;}
+.darkCardBtn{background: transparent;}
+.darkOverLay{background: darkgrey;}
+.darkFooter{background: transparent;border-top: 2px solid darkgrey; color: darkgrey;}
+/* MEDİA QUERY */
+@media(max-width: 1321px){
+  #mainMenu li{top: 10px;}
+}
+@media(max-width: 1281px){/* 1280px ----> 1025px Nest Hub Max */
+#mainMenu li{width: 80px;font-size: 13px;left: 280px;padding-left: 0px;}
+  #searchBarMain{width: 250px;float: right;}
+  #btn1{width: 40px;height: 40px;}
+  .card{max-width: 300px;}
+  .closeBtn{left: 68.5%;}
+}
+@media(max-width: 1025px){/* 1024px ----> 913px Nest Hub */
+  #mainMenu li{width: 65px;font-size: 11px;left: 220px;}
+  #searchBarMain{width: 250px;}
+  #btn1{width: 30px;height: 30px;font-size: 25px;}
+  .card{max-width: 315px;}
+  .modelPic{width:428px;height:590px;}
+  .closeBtn{left: 72.5%;}
+}
+@media(max-width: 913px){ /* 912px ----> 821px Surface Pro7 */
+  #mainMenu li{left: 153px;}
+  #searchBarMain{width: 200px;}
+  .modelPic{width:438px;height:681px;left: 25%;}
+  .card{max-width: 275px;}
+}
+@media(max-width: 821px){   /* 821px ----> 700px İpad Air */
+  #mainMenu li{left: 73px;}
+  #searchBarMain{width: 160px;right: 88px;}
+  .card{max-width: 360px;}
+  .modelPic{height:641px;left: 20%;}
+  .closeBtn{left: 70%;}
+}
+@media(max-width: 769px){
+  #searchBarMain{width: 150px;right: 60px;}
+}
+@media(max-width: 701px){/* 700px ----> 600px */
+p{font-size: 13px;} 
+.card{max-width: 260px;}
+.closeBtn{left: 85%;}
+}
+@media(max-width: 700px){
+  #mainMenu{display: none;}
+}
+@media(min-width: 700px){   /* 2101 px <------ 600px  */
+#dropDownMenu{display:none;}
+}
+@media(max-width: 601px){ /* 600px ----> 500px */
+  #btn2{margin-left: 415px;}
+  #menuBtn{margin-right: 5px;}
+  .modelPic{left: 5%;} /* model resim boyutu 50px düşülecek. left'ler arasında fark 50 olacak */
+  .closeBtn{left: 80%;}
+}
+@media(max-width: 501px){/* 500px ----> 415px */
+  p{font-size: 16px;}
+  #btn2{margin-left: 405px;}
+  #menuBtn{margin-right: 0;}
+  .card{max-width: 350px;left: 60px;}
+   .modelPic{width:388px;height:651px;left: 10%;} /* model resim boyutu 50px düşülecek. left'ler arasında fark 50 olacak */
+  .closeBtn{left: 82.5%;}
+}
+@media(max-width: 415px){/* 414 px ------> 391px İphone XR*/
+  .card{max-width: 300px;}
+  .modelPic{width: 375px;height: 600px;left: 5%;}
+  #searchBarDrop{width: 300px;}
+  #btn2{margin-left: 318px;}
+}
+@media(max-width: 396px){/* 395px ------> 376px İphone 12 pro*/
+  .card{max-width: 285px;}
+  .modelPic{width: 355px;}
+  #btn2{margin-left: 308px;}
+}
+@media(max-width: 376px){ /*375 px ------> 361px nd less İphone SE*/
+  .card{max-width: 260px;}
+  .modelPic{width: 350px;left: 3%;}
+  #searchBarDrop{width: 280px;}
+  #btn2{margin-left: 285px;}
+}
+@media(max-width: 361px){ /*360 px ------> 0px */
+  .modelPic{width: 330px;height: 580px;}
+}

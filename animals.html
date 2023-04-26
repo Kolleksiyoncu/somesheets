@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="./css/animals.css">
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<title>~ Dynamic ~</title>
+ <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAP//AADttwAA7b8AAO23AADttwAA4fcAAO33AADt9wAA7fcAAO23AAD//wAA//8AAP//AAD//wAA" rel="icon" type="image/x-icon"/>
+</head>
+<body>
+<script src="wilds.js"></script>
+<nav>
+ <div id="dropDownMenu"class="menuWrap">
+  <button id="menuBtn"><ion-icon name="menu-outline"></ion-icon></button>
+  <input type="text"name="search" value=""id="searchBarDrop"class="searchBar"placeholder="Search...">
+  <button id="btn2"class="darkModeBtn"type="button"><ion-icon name="contrast-outline"></ion-icon></button>
+  <div class="dropdown-list">
+   <li>
+     <a href="#"><ion-icon name="home-outline"></ion-icon>Home</a>
+     <a href="#"><ion-icon name="book-outline"></ion-icon>Series</a>
+     <a href="#"><ion-icon name="library-outline"></ion-icon>Books</a>
+     <a href="movies.html"><ion-icon name="film-outline"></ion-icon>Movies</a>
+     <a href="#"><ion-icon name="map-outline"></ion-icon>About</a>
+     <a href="#"><ion-icon name="call-outline"></ion-icon>Contact</a>
+     <a href="#"><ion-icon name="log-in-outline"></ion-icon>Register</a>
+   </li>
+  </div>  
+ </div>
+ <div id="mainMenu" class="menuWrap">
+  <p id="mainLogo">just<b style="text-transform:uppercase;">fun</b></p>
+  <div id="linkArea">
+    <script>
+ while(mm<href.length){mainMenu+="<li><a href='"+href[mm]+"'><ion-icon name='"+icons[mm]+"'></ion-icon>"+text[mm]+"</a></li>";
+      mm++}
+    document.querySelector("#linkArea").innerHTML=mainMenu;
+    </script>
+  </div>
+  <input type="text"name="search" value=""id="searchBarMain"class="searchBar"placeholder="Search...">
+  <button id="btn1"class="darkModeBtn"type="button"><ion-icon name="contrast-outline"></ion-icon></button>
+ </div>
+</nav>
+<h1>wild lifer</h1>
+<div id="section">
+  <script>
+    let i=0, result="";
+ while(i<wilds.length){
+ result+="<div class='card'><div class='cardHead'><img class='cardPic'style='width:100%'src='"+wilds[i].poster+"'><div class='modelWrap'style='display: none;'><img class='modelPic' src='"+wilds[i].poster+"'><button class='closeBtn'title='Kill'>&#x2613;</button></div><div class='overlay'><div class='overlayText'><b>Genislik</b>:<u>"+wilds[i].genislik+"</u><br><b>Uzunluk</b>:<u>"+wilds[i].uzunluk+"</u><br><b>Hızı</b>:<u>"+wilds[i].speed+"</u></u></div></div></div><h3>"+wilds[i].isim+"</h3><p class='cardText'>"+wilds[i].info+"</p><tt>more...</tt><br></div>"; 
+   i++}
+  document.querySelector("#section").innerHTML=result;
+  </script>
+</div>
+<div id="toTop"title="RİSE">
+  <span>&#8679;</span>
+</div>
+<footer>
+  <p>&#xa9; All rigths reserved by <b>Koleksiyoncu</b> // just<b>FUN</b> 2022</p>
+</footer>
+<script src="animals.js"></script>
+</body>
